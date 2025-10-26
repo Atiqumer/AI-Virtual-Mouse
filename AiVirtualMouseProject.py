@@ -5,10 +5,10 @@ import autopy
 import time
 
 
-W_CAM, H_CAM = 640, 480          # Webcam resolution
-FRAME_REDUCTION = 100            # Border size for the active screen area
-SMOOTHENING = 9                  # Higher value for smoother movement (was 7)
-CLICK_THRESHOLD = 35             # Reduced distance for a click (was 40)
+W_CAM, H_CAM = 640, 480          
+FRAME_REDUCTION = 100            
+SMOOTHENING = 9                  
+CLICK_THRESHOLD = 35             
 
 
 pTime = 0
