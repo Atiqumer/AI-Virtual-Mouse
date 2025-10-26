@@ -9,7 +9,7 @@ W_CAM, H_CAM = 640, 480          # Webcam resolution
 FRAME_REDUCTION = 100            # Border size for the active screen area
 SMOOTHENING = 9                  # Higher value for smoother movement (was 7)
 CLICK_THRESHOLD = 35             # Reduced distance for a click (was 40)
-#########################
+
 
 pTime = 0
 # Initialize previous and current locations for smoother movement
@@ -20,7 +20,7 @@ clocX, clocY = 0, 0
 cap = cv2.VideoCapture(0)
 cap.set(cv2.CAP_PROP_FRAME_WIDTH, W_CAM)
 cap.set(cv2.CAP_PROP_FRAME_HEIGHT, H_CAM)
-detector = htm.HandDetector(maxHands=1, detectionCon=0.75, trackCon=0.75) # Increased confidence
+detector = htm.HandDetector(maxHands=1, detectionCon=0.75, trackCon=0.75)
 wScr, hScr = autopy.screen.size()
 
 # Main Loop
