@@ -58,7 +58,6 @@ while True:
             y3 = np.interp(y1, (FRAME_REDUCTION, H_CAM - FRAME_REDUCTION), (0, hScr))
 
             # 6. Smoothen Values
-            # Using Exponential Moving Average (EMA) for smoother results
             clocX = plocX + (x3 - plocX) / SMOOTHENING
             clocY = plocY + (y3 - plocY) / SMOOTHENING
 
@@ -67,7 +66,6 @@ while True:
                 # autopy coordinates must be integers
                 autopy.mouse.move(int(clocX), int(clocY)) 
             except Exception as e:
-                # Non-critical error, continue operation but print for debugging
                 print(f"Mouse move error: {e}") 
 
             # Draw circle at the index finger tip and update previous location
