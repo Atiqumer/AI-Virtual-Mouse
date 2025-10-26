@@ -1,0 +1,22 @@
+Virtual Environments
+
+venv/
+.venv/
+env/
+.env/
+
+
+
+Byte-code and temporary files
+
+pycache/
+*.pyc
+
+IDE and Editor Files (e.g., VS Code)
+
+.vscode/
+
+Operating System Files
+
+.DS_Store # macOS
+Thumbs.db # Windows
