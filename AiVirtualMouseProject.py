@@ -12,7 +12,6 @@ CLICK_THRESHOLD = 35
 
 
 pTime = 0
-# Initialize previous and current locations for smoother movement
 plocX, plocY = 0, 0
 clocX, clocY = 0, 0
 
