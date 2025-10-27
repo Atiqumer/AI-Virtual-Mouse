@@ -63,7 +63,6 @@ while True:
 
             # 7. Move Mouse
             try:
-                # autopy coordinates must be integers
                 autopy.mouse.move(int(clocX), int(clocY)) 
             except Exception as e:
                 print(f"Mouse move error: {e}") 
@@ -85,7 +84,6 @@ while True:
 
                 # 10. Click mouse if distance is short
                 if length < CLICK_THRESHOLD:
-                    # Draw a distinctive circle to indicate a successful click
                     cv2.circle(img, (lineInfo[4], lineInfo[5]), 15, (0, 255, 0), cv2.FILLED)
                     try:
                         autopy.mouse.click()
